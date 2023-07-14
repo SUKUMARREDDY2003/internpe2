@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My E-commerce Store</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="script2.js"></script>
+</head>
+<body>
+  <header>
+  </header>
+  <section id="heading">
+   <a href="#"><img src = "logo.jpeg" style="width: 100px; height: 100px;" class="logo" alt=""></a>
+   <h1>ONLY THE BRAVE</h1>
+   <div>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" onclick="showCart()">View Cart</a></li>
+
+    </ul>
+   </div>
+ </section>
+ <section id="home">
+    <h4>Men's Watches</h4>
+
+    <p>Whether you like digital smartwatches or classic chronograph watches, this essential accessories collection has men's watches to tick every box.</p>
+    
+ </section>
+
+  <section id="products">
+    <div class="product">
+      <img src="p1.png" alt="Diesel Dz4283 Mega Chief Analog Watch - For Men">
+      <h3>Mega Chief DZ4283</h3>
+      <p>$292.09</p>
+      <button onclick="addToCart('Mega Chief DZ4283', 292.09)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="p2.png" alt="Product 2">
+      <h3>Little Daddy DZ7256</h3>
+      <p>$126.99</p>
+      <button onclick="addToCart('Little Daddy DZ7256', 126.99)">Add to Cart</button>
+    </div>
+     <div class="product">
+        <img src="p3.png" alt="Product 2">
+        <h3>Diesel DZ4556</h3>
+        <p>$248.65</p>
+        <button onclick="addToCart('Diesel DZ4556', 248.65)">Add to Cart</button>
+      </div>
+    <div class="product">
+        <img src="p4.png" alt="Product 4">
+        <h3>Diesel DZ7423</h3>
+        <p>$194.92</p>
+        <button onclick="addToCart('Diesel DZ7423', 194.92)">Add to Cart</button>
+      </div>
+  </section>
+
+  <div id="cart" style="display: none;">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+</body>
+</html>
